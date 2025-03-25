@@ -6,4 +6,6 @@ const router:Router = express.Router()
 router.route("/register").post(UserController.register)
 router.route("/login").post(UserController.login)
 router.route("/forgetpassword").post(UserController.handleForgotPassword)
+router.route("/verifyotp").post(UserController.verifyOtp)
+
 export default router
